@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support &amp; FAQ — Chattl</title>
+<style>
+  :root {
+    --accent: #1F6F5C;
+    --bg: #ffffff;
+    --fg: #1b1f1d;
+    --muted: #5a635f;
+    --card: #f4f7f5;
+    --border: #dfe5e2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #4fbfa2;
+      --bg: #121614;
+      --fg: #e8ece9;
+      --muted: #9aa39e;
+      --card: #1b201d;
+      --border: #2b322e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: var(--fg);
+    background: var(--bg);
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  a { color: var(--accent); }
+  .back { display: inline-block; margin-bottom: 1.5rem; font-size: 0.95rem; }
+  h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 0.25rem 0 1.5rem; }
+  h2 { font-size: 1.2rem; margin: 1.75rem 0 0.4rem; color: var(--accent); }
+  details { border: 1px solid var(--border); border-radius: 10px; background: var(--card); margin: 0.6rem 0; padding: 0 1rem; }
+  summary { cursor: pointer; font-weight: 600; padding: 0.9rem 0; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "＋"; color: var(--accent); font-weight: 700; margin-right: 0.6rem; }
+  details[open] summary::before { content: "－"; }
+  details > p { margin: 0 0 1rem; }
+  .contact { background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 10px; padding: 1rem 1.25rem; margin-top: 2rem; }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 2.5rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">&larr; Chattl</a>
+    <h1>Support &amp; FAQ</h1>
+    <p class="meta">Last updated: [DATE]</p>
+
+    <details open>
+      <summary>Is my data private?</summary>
+      <p>Yes. Everything you enter — items, photos, receipts, values, notes — stays on your
+      device in Chattl's private storage. There is no cloud and no server. Chattl has no
+      analytics, no tracking, and no ads. We cannot see your inventory.</p>
+    </details>
+
+    <details>
+      <summary>Do I need an account?</summary>
+      <p>No. Chattl has no accounts and no login. You open the app and start using it. Nothing
+      to sign up for, nothing to remember.</p>
+    </details>
+
+    <details>
+      <summary>Does it work offline?</summary>
+      <p>Yes, completely. Chattl never needs an internet connection to work. The only time it
+      goes online is when you make the optional one-time purchase, which is handled by the App
+      Store or Google Play. Even receipt text recognition and barcode scanning run entirely on
+      your device.</p>
+    </details>
+
+    <details>
+      <summary>How do I back up my data? (.chattl export)</summary>
+      <p>Use <strong>Export &rarr; .chattl archive</strong>. This creates a single
+      <code>.chattl</code> file that is a full ZIP backup of your inventory, including photos
+      and receipts. You can open it without the app, store it wherever you like, and use it to
+      restore your data later. CSV and PDF exports are also available. Exports are free and
+      never locked behind a purchase.</p>
+    </details>
+
+    <details>
+      <summary>What is the PDF report?</summary>
+      <p>The PDF report is Chattl's main output: a clean, adjuster-ready document of your
+      belongings, room by room, with photos, descriptions, values, and receipts. If you ever
+      need to make an insurance claim after a burglary, fire, or flood, you can generate this
+      report and hand it straight to your insurer or adjuster.</p>
+    </details>
+
+    <details>
+      <summary>What does Chattl Unlimited unlock?</summary>
+      <p>Every feature in Chattl is free, including all exports. The free version lets you
+      catalogue up to <strong>30 items</strong>. <strong>Chattl Unlimited</strong> is a single
+      one-time purchase (no subscription) that removes that limit so you can add as many items
+      as you like. It supports Family Sharing / Play family library.</p>
+    </details>
+
+    <details>
+      <summary>How do I move my data to a new phone?</summary>
+      <p>Export a <strong>.chattl archive</strong> on your old phone, transfer that file to your
+      new phone (for example via AirDrop, a cable, a file transfer, or your own storage),
+      install Chattl, and import the archive. Your data moves with you. Portability is never
+      behind the paywall.</p>
+    </details>
+
+    <details>
+      <summary>Are my photos uploaded anywhere?</summary>
+      <p>No. Item photos and receipt images stay on your device and are never uploaded. When
+      you import a photo, Chattl also removes its location data (EXIF/GPS) so that information
+      does not travel with the image inside your inventory.</p>
+    </details>
+
+    <div class="contact">
+      <h2 style="margin-top:0">Still need help?</h2>
+      <!-- TODO: replace support@chattl.app with a real monitored contact before publishing -->
+      <p style="margin-bottom:0">Email <a href="mailto:support@chattl.app"><strong>support@chattl.app</strong></a>.</p>
+    </div>
+
+    <footer>Chattl — A private home inventory for insurance.</footer>
+  </div>
+</body>
+</html>

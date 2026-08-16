@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Chattl</title>
+<style>
+  :root {
+    --accent: #1F6F5C;
+    --bg: #ffffff;
+    --fg: #1b1f1d;
+    --muted: #5a635f;
+    --card: #f4f7f5;
+    --border: #dfe5e2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #4fbfa2;
+      --bg: #121614;
+      --fg: #e8ece9;
+      --muted: #9aa39e;
+      --card: #1b201d;
+      --border: #2b322e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: var(--fg);
+    background: var(--bg);
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  a { color: var(--accent); }
+  .back { display: inline-block; margin-bottom: 1.5rem; font-size: 0.95rem; }
+  h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+  h2 { font-size: 1.3rem; margin: 2rem 0 0.5rem; border-bottom: 2px solid var(--accent); padding-bottom: 0.3rem; }
+  .meta { color: var(--muted); font-size: 0.95rem; margin: 0.25rem 0 1.5rem; }
+  .lead { background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 10px; padding: 1rem 1.25rem; }
+  ul { padding-left: 1.3rem; }
+  li { margin: 0.35rem 0; }
+  footer { color: var(--muted); font-size: 0.9rem; margin-top: 3rem; border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">&larr; Chattl</a>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: [DATE]</p>
+
+    <p class="lead"><strong>The short version:</strong> Chattl does not collect your data.
+    Everything you put into the app stays on your device. There is no account, no cloud, and
+    no tracking. We cannot see your inventory, your photos, your receipts, or anything else
+    you enter.</p>
+
+    <h2>What data Chattl stores, and where</h2>
+    <p>You can create the following in Chattl, all stored <strong>only on your device</strong>
+    in the app's private storage:</p>
+    <ul>
+      <li>Properties / home details you choose to add (optional address, policy number, insurer)</li>
+      <li>Rooms</li>
+      <li>Items (name, brand, model, serial number, barcode, purchase price, replacement value, condition, notes, warranty date)</li>
+      <li>Photos of items and receipt images</li>
+    </ul>
+    <p>None of this is transmitted to us or to any third party. We have no server that receives it.</p>
+
+    <h2>What Chattl does NOT do</h2>
+    <ul>
+      <li>No user accounts and no login.</li>
+      <li>No analytics, no tracking, no advertising, no advertising identifiers.</li>
+      <li>No crash-reporting or telemetry SDKs.</li>
+      <li>No selling or sharing of data — there is no data leaving your device to sell or share.</li>
+    </ul>
+
+    <h2>Networking</h2>
+    <p>The only network activity is the in-app purchase ("Chattl Unlimited"), which is
+    processed by the <strong>App Store (Apple)</strong> or <strong>Google Play (Google)</strong>.
+    Payment is handled entirely by the store; Chattl does not receive or store your payment
+    details. Apple's and Google's handling of purchases is governed by their own privacy policies.</p>
+
+    <h2>On-device processing</h2>
+    <ul>
+      <li><strong>Receipt text recognition (OCR)</strong> runs on your device using on-device machine learning. Receipt images are not uploaded.</li>
+      <li><strong>Barcode scanning</strong> runs on your device. Nothing is uploaded.</li>
+      <li><strong>Photo import</strong> removes location metadata (EXIF/GPS) from imported photos.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Camera</strong> — to photograph items and scan barcodes and receipts.</li>
+      <li><strong>Photo library</strong> — to import existing photos.</li>
+      <li><strong>Face ID / fingerprint</strong> — optional app lock only.</li>
+    </ul>
+    <p>Chattl does not request location, microphone, or contacts access.</p>
+
+    <h2>Your control over your data</h2>
+    <ul>
+      <li><strong>Export:</strong> at any time you can export your data as a <code>.chattl</code> archive (a full backup you can open without the app), a CSV file, or a PDF report. Export is never restricted.</li>
+      <li><strong>Delete:</strong> you can delete any item, room, property, photo, or receipt inside the app.</li>
+      <li><strong>Uninstall:</strong> removing the app deletes all Chattl data from the device.</li>
+    </ul>
+    <p>Because we never receive your data, there is no server-side copy for us to access,
+    correct, or delete on your behalf.</p>
+
+    <h2>Children</h2>
+    <p>Chattl is a general-purpose utility and is not directed at children. Because it collects
+    no data, it does not knowingly collect information from anyone, including children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we will update the "Last updated" date above and post the revised
+    policy at the same URL.</p>
+
+    <h2>Contact</h2>
+    <!-- TODO: replace support@chattl.app with a real monitored contact before publishing -->
+    <p>Questions about privacy: <a href="mailto:support@chattl.app"><strong>support@chattl.app</strong></a></p>
+
+    <footer>Chattl — A private home inventory for insurance.</footer>
+  </div>
+</body>
+</html>
